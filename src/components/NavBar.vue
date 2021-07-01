@@ -1,7 +1,21 @@
 <template>
-  <div class="navbar is-transparent">
-    <div class="navbar-brand">
-      <img :src="link" alt="loading" />
+  <div class="columns">
+    <div class="column">
+      <div class="navbar is-transparent">
+        <div class="navbar-brand">
+          <img :src="link" alt="loading" />
+        </div>
+        <div class="column"></div>
+        <div class="navbar-start">
+          <div class="navbar-item">Hjem</div>
+          <div class="navbar-item">Ukens tilbud</div>
+          <div class="navbar-item">Gavekort</div>
+          <div class="navbar-item">Kundestøtte</div>
+          <div class="navbar-end">
+            <div class="navbar-item">Handlekurv</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -22,4 +36,9 @@ export default {
 
 
 <style scoped>
+.navbar-start {
+  margin-left: 25vw;
+  font-size: 1.5em;
+  margin-top: 2.1rem;
+}
 </style>

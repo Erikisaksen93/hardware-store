@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <div class="navbar">
-      <div class="container">
-        <NavBar />
-      </div>
+      <NavBar />
     </div>
     <div class="section">
       <div class="container">
@@ -92,5 +90,9 @@ export default {
 
 <style>
 #app {
+  margin: 0;
+  padding: 0;
+}
+.container {
 }
 </style>
