@@ -98,7 +98,6 @@ export default {
 #app {
   margin: 0;
   padding: 0;
-}
-.container {
+  font-family: "Poppins", sans-serif;
 }
 </style>
