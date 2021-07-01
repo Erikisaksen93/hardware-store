@@ -12,7 +12,7 @@
                 <span class="icon">
                   <i class="fas fa-home"></i>
                 </span>
-                <span><a>Home</a></span>
+                <span><a :href="links.home">Home</a></span>
               </span>
             </div>
             <div class="navbar-item">
@@ -20,7 +20,7 @@
                 <span class="icon">
                   <i class="fas fa-percent"></i>
                 </span>
-                <span><a>Ukens tilbud</a></span>
+                <span><a :href="links.home">Ukens tilbud</a></span>
               </span>
             </div>
             <div class="navbar-item">
@@ -28,7 +28,7 @@
                 <span class="icon">
                   <i class="fas fa-gift-card"></i>
                 </span>
-                <span><a>Gavekort</a></span>
+                <span><a :href="links.home">Gavekort</a></span>
               </span>
             </div>
             <div class="navbar-item">
@@ -36,7 +36,7 @@
                 <span class="icon">
                   <i class="fas fa-user-headset"></i>
                 </span>
-                <span><a>Kundestøtte</a></span>
+                <span><a :href="links.home">Kundestøtte</a></span>
               </span>
             </div>
             <div class="navbar-end">
@@ -45,7 +45,7 @@
                   <span class="icon">
                     <i class="fas fa-shopping-cart"></i>
                   </span>
-                  <span><a>Handlekurv</a></span>
+                  <span><a :href="links.home">Handlekurv</a></span>
                 </span>
               </div>
             </div>
@@ -62,7 +62,9 @@ export default {
   data() {
     return {
       logo: "https://i.ibb.co/3WMLcjh/logo.png",
-      links: {},
+      links: {
+        home: "../components/MainPage",
+      },
     };
   },
   props: {
