@@ -1,16 +1,34 @@
 <template>
   <div id="app">
-    <NavBar />
+    <div class="navbar">
+      <div class="container">
+        <NavBar />
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <Menu />
+      </div>
+    </div>
+    <div class="hero">
+      <div class="container">
+        <MainPage />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar";
+import MainPage from "./components/MainPage";
+import Menu from "./components/Menu";
 
 export default {
   name: "App",
   components: {
     NavBar,
+    MainPage,
+    Menu,
   },
 
   data() {

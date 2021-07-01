@@ -4,13 +4,12 @@
 
 <script>
 export default {
-  name: "NavBar",
+  name: "MainPage",
   props: {
     msg: String,
   },
 };
 </script>
 
-
-<style scoped>
+<style lang="scss" scoped>
 </style>
