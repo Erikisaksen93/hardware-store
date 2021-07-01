@@ -3,14 +3,18 @@
     <div class="navbar">
       <NavBar />
     </div>
-    <div class="section">
-      <div class="container">
-        <Menu />
+    <div class="menu-section">
+      <div class="section">
+        <div class="container">
+          <Menu />
+        </div>
       </div>
     </div>
-    <div class="hero">
-      <div class="container">
-        <MainPage />
+    <div class="view-section">
+      <div class="hero">
+        <div class="container">
+          <MainPage />
+        </div>
       </div>
     </div>
   </div>
@@ -89,6 +93,8 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 #app {
   margin: 0;
   padding: 0;
