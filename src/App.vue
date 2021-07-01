@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <div class="navbar">
-      <div class="container">
-        <NavBar />
+    <div class="nav-bar-section">
+      <div class="navbar">
+        <div class="container">
+          <NavBar />
+        </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <Menu />
+    <div class="menu-section">
+      <div class="section">
+        <div class="container">
+          <Menu />
+        </div>
       </div>
     </div>
-    <div class="hero">
-      <div class="container">
-        <MainPage />
+    <div class="view-section">
+      <div class="hero">
+        <div class="container">
+          <MainPage />
+        </div>
       </div>
     </div>
   </div>
@@ -91,6 +97,21 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 #app {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-bar-section {
+  background-color: coral;
+}
+
+.menu-section {
+  background-color: aquamarine;
+}
+
+.view-section {
+  background-color: burlywood;
 }
 </style>
