@@ -67,10 +67,6 @@ export default {
   name: "NavBar",
   data() {
     return {
-      datakomponenter: [],
-      tv: null,
-      index: null,
-      komponenter: null,
       logo: "https://i.ibb.co/3WMLcjh/logo.png",
       links: {
         home: "../components/MainPage",
