@@ -3,17 +3,23 @@
     <div class="navbar">
       <NavBar />
     </div>
-    <div class="menu-section">
-      <div class="section">
-        <div class="container">
-          <Menu />
+    <div class="columns">
+      <div class="column is-two-fifths">
+        <div class="menu-section">
+          <div class="section">
+            <div class="container">
+              <Menu />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="view-section">
-      <div class="hero">
-        <div class="container">
-          <MainPage />
+      <div class="column is-three-fifths">
+        <div class="view-section">
+          <div class="hero">
+            <div class="container">
+              <MainPage />
+            </div>
+          </div>
         </div>
       </div>
     </div>
