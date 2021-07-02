@@ -40,7 +40,11 @@
               </span>
             </div>
             <div class="navbar-end">
-              <div class="navbar-item">
+              <div
+                class="navbar-item"
+                :v-for="(komponenter, index) in datakomponenter"
+                :key="index"
+              >
                 <span class="icon-text">
                   <span class="icon">
                     <i class="fas fa-shopping-cart"></i>
@@ -57,10 +61,16 @@
 </template>
 
 <script>
+import deepClone from "deep-clone";
+import { model } from "../shared/data";
 export default {
   name: "NavBar",
   data() {
     return {
+      datakomponenter: null,
+      tv: null,
+      index: null,
+      komponenter: null,
       logo: "https://i.ibb.co/3WMLcjh/logo.png",
       links: {
         home: "../components/MainPage",
@@ -69,6 +79,11 @@ export default {
   },
   props: {
     msg: String,
+  },
+  created() {
+    this.datakomponenter = deepClone(model.datakomponenter);
+    this.tv = deepClone(model.TV);
+    console.log(model.datakomponenter);
   },
 };
 </script>
