@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="navbar">
-      <NavBar />
+      <NavBar :itemsInCart="cartLength" />
     </div>
     <div class="columns">
       <div class="column is-two-fifths">
@@ -42,7 +42,30 @@ export default {
   data() {
     return {
       datakomponenter: [],
+      cart: [
+        {
+          type: "prosessor",
+          navn: "Intel Core i17-19900KXX Prosessor",
+          beskrivelse:
+            "Socket-LGA9000x, 69-Core, 420-Thread, 9.5/16.2GHz, Rocket Lake, uten kjøler",
+          pris: 99000,
+          img: "https://www.komplett.no/img/p/200/1180155.jpg",
+        },
+
+        {
+          type: "skjermkort",
+          navn: "MSI GeForce RTX3080Ti SUPRIM X",
+          beskrivelse: "Skjermkort, PCI-Express 4.0, 12GB GDDR6X, Ampere",
+          pris: 125500,
+          img: "https://www.komplett.no/img/p/200/1187638.jpg",
+        },
+      ],
     };
+  },
+  computed: {
+    cartLength() {
+      return this.cart.length;
+    },
   },
 };
 </script>
