@@ -61,7 +61,6 @@
 </template>
 
 <script>
-// import deepClone from "deep-clone";
 import { model } from "../shared/data";
 export default {
   name: "NavBar",
