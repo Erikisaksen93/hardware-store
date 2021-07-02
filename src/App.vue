@@ -65,6 +65,5 @@ export default {
 }
 
 .view-section {
-  background-color: darkcyan;
 }
 </style>
