@@ -75,8 +75,8 @@ export default {
 
 
 <style scoped>
-.navbar-brand {
-  width: 400px;
+.navbar-brand img {
+  width: 250px;
   height: auto;
 }
 .navbar-start {
@@ -86,11 +86,12 @@ export default {
 }
 .navbar-item {
   margin-left: 3rem;
+  color: #5999be;
 }
 .icon {
   margin-top: -0.2rem;
 }
 .navbar a {
-  color: black;
+  color: #5999be;
 }
 </style>
