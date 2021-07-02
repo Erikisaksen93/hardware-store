@@ -3,16 +3,52 @@
     <div class="column">
       <div class="navbar is-transparent">
         <div class="navbar-brand">
-          <img :src="link" alt="loading" />
+          <img :src="logo" alt="loading" />
         </div>
-        <div class="column"></div>
-        <div class="navbar-start">
-          <div class="navbar-item">Hjem</div>
-          <div class="navbar-item">Ukens tilbud</div>
-          <div class="navbar-item">Gavekort</div>
-          <div class="navbar-item">Kundestøtte</div>
-          <div class="navbar-end">
-            <div class="navbar-item">Handlekurv</div>
+        <div class="column">
+          <div class="navbar-start">
+            <div class="navbar-item">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-home"></i>
+                </span>
+                <span><a :href="links.home">Home</a></span>
+              </span>
+            </div>
+            <div class="navbar-item">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-percent"></i>
+                </span>
+                <span><a :href="links.home">Ukens tilbud</a></span>
+              </span>
+            </div>
+            <div class="navbar-item">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-gift-card"></i>
+                </span>
+                <span><a :href="links.home">Gavekort</a></span>
+              </span>
+            </div>
+            <div class="navbar-item">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-user-headset"></i>
+                </span>
+                <span><a :href="links.home">Kundestøtte</a></span>
+              </span>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                  <span><a :href="links.home">Handlekurv</a></span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -25,7 +61,10 @@ export default {
   name: "NavBar",
   data() {
     return {
-      link: "https://i.ibb.co/RbgFzn6/logo.png",
+      logo: "https://i.ibb.co/3WMLcjh/logo.png",
+      links: {
+        home: "../components/MainPage",
+      },
     };
   },
   props: {
@@ -36,9 +75,23 @@ export default {
 
 
 <style scoped>
+.navbar-brand img {
+  width: 250px;
+  height: auto;
+}
 .navbar-start {
-  margin-left: 25vw;
+  margin-left: 15vw;
   font-size: 1.5em;
-  margin-top: 2.1rem;
+  margin-top: 4rem;
+}
+.navbar-item {
+  margin-left: 3rem;
+  color: #5999be;
+}
+.icon {
+  margin-top: -0.2rem;
+}
+.navbar a {
+  color: #5999be;
 }
 </style>
