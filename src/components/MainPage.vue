@@ -1,16 +1,20 @@
 <template>
   <div>
     <div class="section">
-      <div class="columns">
+      <div
+        class="columns"
+        v-for="(items, index) in datakomponenter"
+        :key="index"
+      >
         <div class="column is-one-fifth">
-          <img :src="datakomponenter[0].prosessor.img" />
+          <img :src="items.img" />
         </div>
         <div class="column is-three-fifth" style="margin-top: 2rem">
           <h1 class="title is-1" style="font-size: 1.5em">
-            {{ datakomponenter[0].prosessor.navn }}
+            {{ items.navn }}
           </h1>
           <h3 class="subtitle is-3" style="font-size: 1em">
-            {{ datakomponenter[0].prosessor.beskrivelse }}
+            {{ items.beskrivelse }}
           </h3>
         </div>
         <div
@@ -18,7 +22,9 @@
           style="margin-top: 2rem; padding-left: 8rem"
         >
           <h1 class="title is-1" style="font-size: 1.5em">PRIS</h1>
-          <h3 class="subtitle is-3" style="font-size: 1em">99 000,-</h3>
+          <h3 class="subtitle is-3" style="font-size: 1em">
+            {{ items.pris }},-
+          </h3>
         </div>
         <div class="column is-one-fifth" style="margin-top: 2rem">
           <input type="number" class="selectAmount" />
@@ -65,6 +71,7 @@ img {
   height: 4vh;
   font-weight: bolder;
   text-align: center;
-  border: none;
+  border: solid 2px black;
+  border-radius: 5%;
 }
 </style>
