@@ -106,8 +106,8 @@ export default {
 .navbar-item:hover {
   color: #5999be;
   opacity: 1;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 .icon {
   margin-top: -0.2rem;
@@ -118,7 +118,7 @@ export default {
 .navbar a:hover {
   color: #5999be;
   opacity: 1;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 </style>
