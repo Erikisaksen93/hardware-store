@@ -86,12 +86,24 @@ export default {
 }
 .navbar-item {
   margin-left: 3rem;
+  color: black;
+}
+.navbar-item:hover {
   color: #5999be;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .icon {
   margin-top: -0.2rem;
 }
 .navbar a {
+  color: black;
+}
+.navbar a:hover {
   color: #5999be;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 </style>
