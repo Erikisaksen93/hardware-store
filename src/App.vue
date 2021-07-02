@@ -100,4 +100,16 @@ export default {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.navbar-section {
+  background-color: coral;
+}
+
+.menu-section {
+  background-color: cornflowerblue;
+}
+
+.view-section {
+  background-color: darkcyan;
+}
 </style>
